@@ -1,0 +1,6 @@
+import datetime
+dt = datetime.datetime(2017, 1, 1)
+while dt.year == 2017:
+    if dt.day == 13 and dt.weekday() == 4:
+        print(dt)
+    dt = dt + datetime.timedelta(days=1)
